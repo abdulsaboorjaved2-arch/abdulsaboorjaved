@@ -19,13 +19,35 @@
     --creative-2:#9E1B26;
   }
   html[data-theme="light"]{
-    --ink:#F7F6F3;
+    --ink:#F6F5F2;
     --surface:#FFFFFF;
-    --surface-2:#F0EEEA;
-    --line: rgba(15,17,21,0.10);
-    --text:#14161A;
-    --muted:#5B6270;
+    --surface-2:#ECEAE4;
+    --line: rgba(20,22,26,0.09);
+    --text:#191A1E;
+    --muted:#666C78;
+    --signal:#2B4FCF;
+    --creative:#C22C3A;
+    --creative-2:#7A1620;
   }
+  html[data-theme="light"] .blob{opacity:0.08;}
+  html[data-theme="light"] .hero{
+    background:
+      radial-gradient(circle at 15% 30%, rgba(43,79,207,0.06), transparent 45%),
+      radial-gradient(circle at 85% 70%, rgba(194,44,58,0.06), transparent 45%);
+  }
+  html[data-theme="light"] .cursor-glow{
+    background:radial-gradient(circle, rgba(43,79,207,0.08), rgba(194,44,58,0.05) 45%, transparent 70%);
+  }
+  html[data-theme="light"] .proj-card:hover{
+    box-shadow:0 0 0 1.5px var(--signal), 0 20px 40px -22px rgba(43,79,207,0.22);
+  }
+  html[data-theme="light"] .kind.k-cyan{background:rgba(43,79,207,0.08); color:var(--signal);}
+  html[data-theme="light"] .kind.k-gold{background:rgba(194,44,58,0.08); color:var(--creative);}
+  html[data-theme="light"] .btn-primary{color:#FFFFFF;}
+  html[data-theme="light"] .stat-card:hover{border-color:var(--signal);}
+  html[data-theme="light"] .about-photo-wrap img{filter:none;}
+  html[data-theme="light"] .contact-box::before{opacity:0.3;}
+  html[data-theme="light"] .theme-toggle{box-shadow:0 1px 2px rgba(20,22,26,0.06);}
   *{box-sizing:border-box; margin:0; padding:0;}
   body{transition:background .25s ease, color .25s ease;}
   html{scroll-behavior:smooth;}
@@ -433,6 +455,10 @@
         <p>Outside of that pipeline, I design — social media creatives, blog visuals, and logos in Adobe Photoshop — and edit YouTube videos in Adobe After Effects and Premiere Pro. Both sides of my work rely on the same instinct: understanding an audience well enough to hold their attention.</p>
       </div>
       <div>
+        <div class="about-photo-wrap">
+          <img src="profile.jpg" alt="Abdul Saboor Javed">
+          <span class="about-photo-tag">Abdul Saboor Javed</span>
+        </div>
         <div class="stat-card"><div class="num">3+</div><div class="lab">Core disciplines — outreach, design, video editing</div></div>
         <div class="stat-card"><div class="num">2</div><div class="lab">Creative suites — Photoshop, After Effects & Premiere Pro</div></div>
       </div>
@@ -604,8 +630,9 @@
       <p>Whether you need a pipeline built or a story visualized, I'd like to hear about it.</p>
       <div class="contact-links">
         <a href="mailto:abdulsaboorjaved2@gmail.com" class="btn btn-primary">abdulsaboorjaved2@gmail.com</a>
+        <a href="https://wa.me/923473923423" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp</a>
         <a href="https://www.linkedin.com/in/abdul-saboor-javed-b41282382/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-        <a href="#" class="btn btn-ghost">Behance / Portfolio Reel</a>
+        <a href="https://www.behance.net/asabdulsaboor" target="_blank" rel="noopener" class="btn btn-ghost">Behance / Portfolio Reel</a>
       </div>
     </div>
   </div>
